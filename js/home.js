@@ -1,6 +1,5 @@
-do {
-    $(document).ready(function(){
-        var vp_height = $(window).height();
-        $('.carousel-item').css({"height":vp_height.toString()});
-    });
-} while (vp_height > 0);
+let vp_height;
+$(document).ready(function(){
+    vp_height = $(window).height();
+    $('.carousel-item').css({"height":vp_height.toString()});
+});
