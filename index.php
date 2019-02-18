@@ -32,11 +32,14 @@
                     if(!isset($_SERVER['PHP_AUTH_USER']))
                     {
                         # Will require login and register pages in the views folder...
+                        # Must put proper href's...
                         echo '<li class="nav-item"><a class="nav-link" href="#">Login</a></li>';
                         echo '<li class="nav-item"><a class="nav-link" href="#">Register</a></li>';
                     }
                     else
                     {
+                        # Must create a user's dashboard...
+                        # Must put proper href...
                         echo "<h3 class=\"nav-item\"><a class=\"nav-link\" href=\"#\">{$_SERVER['PHP_AUTH_USER']}</a></h3>";
                     }
                 ?>
@@ -101,5 +104,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="js\home.js"></script>
+    <script>
+        let vp_height;
+        $(document).ready(function(){
+            vp_height = $(window).height();
+            $('.carousel-item, body').css({"height":vp_height.toString()});
+        });
+    </script>
 </body>
 </html>
