@@ -26,10 +26,27 @@
                     <a class="nav-link" href="#">Blog</a>
                 </li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <?php
+                    if(!isset($_SERVER['PHP_AUTH_USER']))
+                    {
+                        # Will require login and register pages in the views folder...
+                        echo '<li class="nav-item"><a class="nav-link" href="#">Login</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link" href="#">Register</a></li>';
+                    }
+                    else
+                    {
+                        echo "<h3 class=\"nav-item\"><a class=\"nav-link\" href=\"#\">{$_SERVER['PHP_AUTH_USER']}</a></h3>";
+                    }
+                ?>
+            </ul>
+            <!--
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" aria-label="Search" style="background-color:rgba(255, 255, 255, 0.4)">
                 <button class="btn btn-light my-2 my-sm-0" type="submit" style="background-color:rgba(255, 255, 255, 0.75)">Search</button>
             </form>
+            -->
         </div>
     </nav>
     <div class="bd-example cover">
@@ -75,7 +92,8 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
-                
+                <!-- Cars results goes here!!! -->
+
             </div>
         </div>
     </div>
