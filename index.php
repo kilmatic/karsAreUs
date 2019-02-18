@@ -1,3 +1,6 @@
+<?php
+    include_once "model\db.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

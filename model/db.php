@@ -5,7 +5,8 @@
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     try 
     {
-        $dbCon = new PDO($dsn, $username, $pword, $options);        
+        $dbCon = new PDO($dsn, $username, $pword, $options); 
+        echo "<script> console.log('Connection Successful...'); </script>";
     } 
     catch(PDOexception $e) 
     {
