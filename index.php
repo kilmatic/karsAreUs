@@ -26,10 +26,30 @@
                     <a class="nav-link" href="#">Blog</a>
                 </li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <?php
+                    if(!isset($_SERVER['PHP_AUTH_USER']))
+                    {
+                        # Will require login and register pages in the views folder...
+                        # Must put proper href's...
+                        echo '<li class="nav-item"><a class="nav-link" href="#">Login</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link" href="#">Register</a></li>';
+                    }
+                    else
+                    {
+                        # Must create a user's dashboard...
+                        # Must put proper href...
+                        echo "<h3 class=\"nav-item\"><a class=\"nav-link\" href=\"#\">{$_SERVER['PHP_AUTH_USER']}</a></h3>";
+                    }
+                ?>
+            </ul>
+            <!--
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" aria-label="Search" style="background-color:rgba(255, 255, 255, 0.4)">
                 <button class="btn btn-light my-2 my-sm-0" type="submit" style="background-color:rgba(255, 255, 255, 0.75)">Search</button>
             </form>
+            -->
         </div>
     </nav>
     <div class="bd-example cover">
@@ -75,7 +95,9 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
-                
+
+                <!-- Cars results goes here!!! -->
+
             </div>
         </div>
     </div>
@@ -83,5 +105,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="js\home.js"></script>
+    <script>
+        let vp_height;
+        $(document).ready(function(){
+            vp_height = $(window).height();
+            $('.carousel-item, body').css({"height":vp_height.toString()});
+        });
+    </script>
 </body>
 </html>
