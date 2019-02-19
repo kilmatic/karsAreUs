@@ -106,11 +106,6 @@
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="js\home.js"></script>
     <script>
-        let vp_height;
-        $(document).ready(function(){
-            vp_height = $(window).height();
-            $('.carousel-item, body').css({"height":vp_height.toString()});
-        });
     </script>
 </body>
 </html>
