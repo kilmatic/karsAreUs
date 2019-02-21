@@ -66,11 +66,11 @@
         }
     }
 
-    function update_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission)
+    function update_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission, $car_description)
     {
         global $db;
         $query = 'UPDATE cars 
-                  SET ref = :ref, make = :make, model = :model, man_year = :man_year, mileage = :mileage, _location = :_location, price = :price, colour = :colour, transmission = :transmission 
+                  SET ref = :ref, :make, :model, :man_year, :mileage, :_location, :price, :colour, :transmission, :car_description 
                   WHERE ref = :ref';
         try
         {
