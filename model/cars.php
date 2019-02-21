@@ -34,13 +34,13 @@
         }
     }
 
-    function add_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission)
+    function add_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission, $car_description)
     {
         global $db;
         $query = 'INSERT INTO cars
-                    (ref, make, model, man_year, mileage, _location, price, colour, transmission)
+                    (ref, make, model, man_year, mileage, _location, price, colour, transmission, car_description)
                   VALUES
-                    (:ref, :make, :model, :man_year, :mileage, :_location, :price, :colour, :transmission)';
+                    (:ref, :make, :model, :man_year, :mileage, :_location, :price, :colour, :transmission, :car_description)';
         try
         {
             $statement = $db->prepare($query);
@@ -53,6 +53,7 @@
             $statement->bindValue(':price', $price);
             $statement->bindValue(':colour', $colour);
             $statement->bindValue(':transmission', $transmission);
+            $statement->bindValue(':car_description', $car_description);
             $statement->execute();
             $statement->closeCursor();
             $car_ref = $db->lastInsertedId();
@@ -83,6 +84,7 @@
             $statement->bindValue(':price', $price);
             $statement->bindValue(':colour', $colour);
             $statement->bindValue(':transmission', $transmission);
+            $statement->bindValue(':car_description', $car_description);
             $statement->execute();
             $statement->closeCursor();
             $car_ref = $db->lastInsertedId();
