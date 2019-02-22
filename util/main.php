@@ -5,7 +5,7 @@
     # Get app path
     $uri = filter_input(INPUT_SERVER, 'REQUEST_URI');
     $dirs = explode('/', $uri);
-    $app_path = '/'.$dirs[1].'/'.$dirs.'/';
+    $app_path = '/'.$dirs[1].'/'.$dirs[2].'/';
 
     # Set include path
     set_include_path($document_root.$app_path);
