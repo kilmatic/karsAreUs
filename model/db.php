@@ -1,4 +1,29 @@
 <?php
+
+    $host = 'localhost';
+    $username = 'root';
+    $password = 'kilmatic';
+    $db = 'vrrrparr';
+
+    $dbCon = new mysqli($host, $username, $password, $db);
+
+    $error_msg = $dbCon->connect_error;
+    if($error_msg != null)
+    {
+        include 'error/db_error_connect.php';
+        exit;
+    }
+
+    function display_db_error($error_message)
+    {
+        global $app_path;
+        include 'error/db_error.php';
+        exit;
+    }
+
+
+
+    /*
     $dsn = 'mysql:host=localhost;dbname=vrrrparr';
     $username = 'root';
     $pword = 'kilmatic';
@@ -14,5 +39,5 @@
         echo "<p> Not connected to database: $error_msg </p>";
         exit;
     }
-    
+    */
 ?>

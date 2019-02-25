@@ -1,12 +1,12 @@
 <?php
     # Get document root 
-    $document_root = filter_input(INPUT_SERVER, 'DOCUMENT_ROOT');
+    $d_root = filter_var($_SERVER['DOCUMENT_ROOT']);
 
     # Get app path
-    $uri = filter_input(INPUT_SERVER, 'REQUEST_URI');
+    $uri = filter_var($_SERVER['REQUEST_URI']);
     $dirs = explode('/', $uri);
-    $app_path = '/'.$dirs[1].'/'.$dirs[2].'/';
+    $app_path = '/'.$dirs[0].'/';
 
     # Set include path
-    set_include_path($document_root.$app_path);
+    set_include_path($d_root.$app_path);
 ?>

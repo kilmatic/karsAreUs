@@ -1,5 +1,8 @@
 <?php
-    include_once "model\db.php";
+    require_once('util/main.php');
+    require_once('util/text_markup.php');
+    require_once('model/cars_db.php');
+    require_once('model/db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,9 +98,8 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
-
                 <!-- Cars results goes here!!! -->
-
+                <?php require_once('view/car_load.php');?>
             </div>
         </div>
     </div>
