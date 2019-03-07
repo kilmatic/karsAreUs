@@ -1,8 +1,8 @@
 <?php
-    require_once('util/main.php');
-    require_once('util/text_markup.php');
-    require_once('model/cars_db.php');
-    require_once('model/db.php');
+    require_once 'util/main.php';
+    require_once 'util/text_markup.php';
+    require_once 'model/cars_db.php';
+    require_once 'model/db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>KarAreUs</title>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
 </head>
 <body>
@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo $app_path; ?>">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
                 </li>
             </ul>
-
+            
             <ul class="nav navbar-nav navbar-right">
                 <?php
                     if(!isset($_SERVER['PHP_AUTH_USER']))
@@ -98,8 +98,31 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
+            <?php 
+                /*
+                # Get document root 
+                $d_root = filter_var($_SERVER['DOCUMENT_ROOT']);
+
+                # Get app path
+                $uri = filter_var($_SERVER['REQUEST_URI']);
+                $dirs = explode('/', $uri);
+                $app_path = '/'.$dirs[1].'/';
+
+                # Set include path
+                echo $uri ."<br>"; 
+                print_r( $dirs[1]);
+                echo "<br>";
+                echo $d_root;
+                echo "<br>";
+                echo $app_path;
+                echo "<br>";
+                echo $d_root.$app_path;
+                echo "<br>";
+                echo ini_set($d_root,$app_path);
+                */
+            ?>
                 <!-- Cars results goes here!!! -->
-                <?php require_once('view/car_load.php');?>
+                <?php require_once 'model/car_load.php';?>
             </div>
         </div>
     </div>
@@ -108,9 +131,8 @@
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="js\home.js"></script>
     <script>
-        let vp_height;
+        let vp_height = $(window).height();
         $(document).ready(function(){
-            vp_height = $(window).height();
             $('.carousel-item').css({"height":vp_height.toString()});
         });
     </script>

@@ -8,5 +8,6 @@
     $app_path = '/'.$dirs[0].'/';
 
     # Set include path
-    set_include_path($d_root.$app_path);
+    ini_set($d_root,$app_path);
+    # set_include_path($d_root.$app_path);
 ?>
