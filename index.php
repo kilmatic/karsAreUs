@@ -98,31 +98,8 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
-            <?php 
-                /*
-                # Get document root 
-                $d_root = filter_var($_SERVER['DOCUMENT_ROOT']);
-
-                # Get app path
-                $uri = filter_var($_SERVER['REQUEST_URI']);
-                $dirs = explode('/', $uri);
-                $app_path = '/'.$dirs[1].'/';
-
-                # Set include path
-                echo $uri ."<br>"; 
-                print_r( $dirs[1]);
-                echo "<br>";
-                echo $d_root;
-                echo "<br>";
-                echo $app_path;
-                echo "<br>";
-                echo $d_root.$app_path;
-                echo "<br>";
-                echo ini_set($d_root,$app_path);
-                */
-            ?>
                 <!-- Cars results goes here!!! -->
-                <?php require_once 'model/car_load.php';?>
+                <?php require_once 'view/car_load.php';?>
             </div>
         </div>
     </div>

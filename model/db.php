@@ -3,13 +3,13 @@ class Database{
     public $connected;
     protected $dbCon;
 
-    public function __construc($username = 'root', $pword = 'kilmatic', $dsn = 'mysql:host=localhost;dbname=vrrrparr;charset=utf8', $options = []){
-        $this->$connected = true;
+    public function __construct($username = 'root', $pword = 'kilmatic', $dsn = 'mysql:host=localhost;dbname=vrrrparr;', $options = []){
+        $this->connected = true;
         try 
         {
-            $this->$dbCon = new PDO($dsn, $username, $pword, $options); 
-            $this->$dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->$dbCon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $this->dbCon = new PDO($dsn, $username, $pword, $options); 
+            $this->dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->dbCon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             echo "<script> console.log('Connection Successful...'); </script>";
         } 
         catch(PDOexception $e) 
@@ -20,13 +20,13 @@ class Database{
     }
 
     public function Disconnect(){
-        $this->$dbCon = null;
-        $this->$connected = false;
+        $this->dbCon = null;
+        $this->connected = false;
     }
 
     public function getRow($query, $params = []){
         try {
-            $statement = $this->$dbCon->prepare($query);
+            $statement = $this->dbCon->prepare($query);
             $statement->execute($params);
             return $statement->fetch();
         } catch (PDOException $e) {
@@ -36,7 +36,7 @@ class Database{
 
     public function getRows($query, $params = []){
         try {
-            $statement = $this->$dbCon->prepare($query);
+            $statement = $this->dbCon->prepare($query);
             $statement->execute($params);
             return $statement->fetchAll();
         } catch (PDOException $e) {
@@ -46,7 +46,7 @@ class Database{
 
     public function insertRow($query, $params = []){
         try {
-            $statement = $this->$dbCon->prepare($query);
+            $statement = $this->dbCon->prepare($query);
             $statement->execute($params);
             return true;
         } catch (\Throwable $th) {
