@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KarAreUs</title>
+    <title>KarsAreUs</title>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
 </head>
 <body>
@@ -47,12 +47,6 @@
                     }
                 ?>
             </ul>
-            <!--
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" aria-label="Search" style="background-color:rgba(255, 255, 255, 0.4)">
-                <button class="btn btn-light my-2 my-sm-0" type="submit" style="background-color:rgba(255, 255, 255, 0.75)">Search</button>
-            </form>
-            -->
         </div>
     </nav>
     <div class="bd-example cover">
@@ -63,21 +57,21 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" style="height:700px">
+                <div class="carousel-item active" style="height:100%">
                     <img src="https://ik.imagekit.io/83dhckxhugrjz/telescope_SkwXnisQN.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="height:600px">
+                <div class="carousel-item" style="height:100%">
                     <img src="https://ik.imagekit.io/83dhckxhugrjz/default-image.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="height:600px">
+                <div class="carousel-item" style="height:100%">
                     <img src="https://ik.imagekit.io/83dhckxhugrjz/hall_H13Q3ismV.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
@@ -109,8 +103,8 @@
     <script src="js\home.js"></script>
     <script>
         let vp_height = $(window).height();
-        $(document).ready(function(){
-            $('.carousel-item').css({"height":vp_height.toString()});
+        $(window).on('load resize',function(){
+            $('.bd-example .cover .carousel-item').css({"height":vp_height.toString()});
         });
     </script>
 </body>

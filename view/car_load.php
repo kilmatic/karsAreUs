@@ -31,7 +31,7 @@ require_once 'model/cars_db.php';
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Enquire</button>
                 </div>
-                <small class="text-muted"><?php echo $car['price']; ?></small>
+                <small class="text-muted"><?php echo 'R'.$car['price']; ?></small>
                 </div>
             </div>
             </div>
