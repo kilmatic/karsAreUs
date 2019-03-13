@@ -1,20 +1,7 @@
 <?php
 
 require_once 'model/cars_db.php';
- 
-/*
-    $ref = $car['ref'];
-    $make = $car['make'];
-    $model = $car['model'];
-    $man_year = $car['man_year'];
-    $mileage = $car['mileage'];
-    $location = $car['_location'];
-    $price = $car['price'];
-    $colour = $car['colour'];
-    $transmission = $car['transmission'];
-    $description = $car['car_description'];
-    $description_tags = add_tags($description);    
-*/
+
 ?>
 <?php if(count($get_cars) == 0) : ?>
     <p>Cannot find cars...</p>
