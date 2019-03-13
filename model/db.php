@@ -61,23 +61,5 @@ class Database{
     public function deleteRows($query, $params = []){
         $this->insertRow($query, $params);        
     }
-   
-    /*
-    $dsn = 'mysql:host=localhost;dbname=vrrrparr';
-    $username = 'root';
-    $pword = 'kilmatic';
-    $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-    try 
-    {
-        $dbConCon = new PDO($dsn, $username, $pword, $options); 
-        echo "<script> console.log('Connection Successful...'); </script>";
-    } 
-    catch(PDOexception $e) 
-    {
-        $error_msg = $e->getMessage();
-        echo "<p> Not connected to database: $error_msg </p>";
-        exit;
-    }
-    */
 }    
 ?>
