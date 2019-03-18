@@ -5,30 +5,9 @@ $db = new Database;
 $get_car = $db->getRow('SELECT * FROM cars WHERE REF = ?', ['AU101']);
 $get_cars = $db->getRows('SELECT * FROM cars');
 
-
 #Disconnect();
 #die_r($get_cars);
-
 /*
-function get_cars($result)
-{
-    global $dbCon;
-    try
-    {
-        $query = 'SELECT * FROM cars WHERE ref = :ref';
-        $statement = $dbCon->prepare($query);
-        $statement->bindValue(':ref', $ref);
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_OBJ);
-        $statement->closeCursor(); 
-        return $result;
-    }
-    catch(PDOexception $e)
-    {
-        display_db_error($e->getMessage());
-    }
-}
-
 function add_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission)
 {
     global $db;
