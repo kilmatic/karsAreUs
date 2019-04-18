@@ -1,9 +1,9 @@
 <?php
     require_once 'header.php';
 ?>
-<div class="container">
+<div class="container" style="border: solid 1px black">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2" style="border: solid 1px black">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                     <form class="form-horizontal" method="POST" action="<?php #require_once '../model/users.php' ?>">

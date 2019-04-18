@@ -8,10 +8,4 @@ $app_path = '/'.$dirs[1].'/'.$dirs[2].'/';
 
 # Set include path
 set_include_path($doc_root.$app_path);
-
-    /* echo $uri;
-    echo '<br>';
-    echo $doc_root;
-    echo '<br>';
-    echo $app_path;*/
 ?>

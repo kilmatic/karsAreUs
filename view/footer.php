@@ -1,12 +1,31 @@
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/home.js"></script>
-    <script>
-        let vp_height = $(window).height();
-        $(window).on('load resize',function(){
-            $('.bd-example .cover .carousel-item').css({"height":vp_height.toString()});
-        });
-    </script>
-</body>
-</html>
+<footer class="footer" style="margin: 5em 0em 1em 0em;">
+    <div class="container" style="padding-left: 0">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wrapper" style="background-color:#ecf0f1; padding: 1em 2em;">
+                <h3><strong>Quick Links</strong></h3>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Partners</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wrapper" style="background-color:#ecf0f1; padding: 1em 2em;">
+                <h3><strong>Follow Us:</strong></h3>
+                <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="text-align: center; padding: 1em; margin: 1em 0; background-color :#ecf0f1;">
+            All Rights Reserved Â©. Web Code Geeks 2015.
+        </div>
+    </div>
+</footer>
