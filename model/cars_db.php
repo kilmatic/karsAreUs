@@ -2,12 +2,10 @@
 require_once 'model/db.php';
 $db = new Database;
 
-$get_car = $db->getRow('SELECT * FROM cars WHERE REF = ?', ['AU101']);
 $get_cars = $db->getRows('SELECT * FROM cars');
 
 #Disconnect();
 #die_r($get_cars);
-/*
 function add_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission)
 {
     global $db;
@@ -85,5 +83,4 @@ function delete_cars($ref)
         display_db_error($error_message);
     }
 }
-*/
 ?>

@@ -1,6 +1,4 @@
-<?php
-    require_once 'header.php';
-?>
+<?php require_once 'header.php'; ?>
 <div class="container" style="border: solid 1px black">
     <div class="row">
         <div class="col-md-8 col-md-offset-2" style="border: solid 1px black">
@@ -39,6 +37,4 @@
         </div>
     </div>
 </div>
-<?php
-    require_once 'footer.php';
-?>
+<?php require_once 'footer.php'; ?>
