@@ -1,0 +1,41 @@
+.cover {
+    position: relative;
+    background: white;
+    overflow: hidden; 
+}
+
+.carousel {
+    position: fixed;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.album {
+    z-index: 10;
+    margin-top: 350.22px;
+    margin-bottom: 353px;
+}
+
+footer {
+    background: black;
+    color: antiquewhite;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.legal {
+    text-align: left;
+    padding: 1em; 
+    margin: 1em 0;
+}
+
+/* ----- Media Queries ----- */
+
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
