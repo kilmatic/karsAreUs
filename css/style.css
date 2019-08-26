@@ -24,11 +24,6 @@
     margin-bottom: 353px;
 }
 
-/* .container {
-    background-image: linear-gradient(brown, pink);
-    height: 380px;
-} */
-
 .jumbotron {
     height: 320px !important;
     background-image: linear-gradient(rgb(127, 142, 155));
@@ -36,9 +31,9 @@
 
 footer {
     background: brown;
-    background-image: linear-gradient(white, yellow);
-    color: rgba(53, 47, 33, .75);
-    padding: 40px 0;
+    background-image: linear-gradient(white, rgba(226, 97, 129, 0.712));
+    color: rgba(36, 28, 22, 0.856);
+    padding: 40px 0 0 0;
     position: fixed;
     bottom: 0;
     width: 100%;

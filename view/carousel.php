@@ -7,7 +7,6 @@
             </ol>
             <div class="carousel-inner" style="background-color:rgba(61, 61, 61, 0.5)">
                 <div class="carousel-item active" style="height:350.22px">
-                    <!--<img src="https://ik.imagekit.io/83dhckxhugrjz/telescope_SkwXnisQN.jpg" class="d-block w-100" alt="...">-->
                     <img src="images\slide\C1GJmoc.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
@@ -15,7 +14,6 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height:350.22px">
-                    <!--<img src="https://ik.imagekit.io/83dhckxhugrjz/default-image.jpg" class="d-block w-100" alt="...">-->
                     <img src="images\slide\5HL2Nyn.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
@@ -23,7 +21,6 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height:350.22px">
-                    <!-- <img src="https://ik.imagekit.io/83dhckxhugrjz/hall_H13Q3ismV.jpg" class="d-block w-100" alt="..."> -->
                     <img src="images\slide\TRTUhmp.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>

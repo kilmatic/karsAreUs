@@ -48,7 +48,7 @@ class Database{
             $statement = $this->dbCon->prepare($query);
             $statement->execute($params);
             return true;
-        } catch (\Throwable $th) {
+        } catch (\Throwable $e) {
             throw new Exception($e->getMessage());
         }
     }
@@ -61,4 +61,3 @@ class Database{
         $this->insertRow($query, $params);        
     }
 }    
-?>
