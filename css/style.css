@@ -4,6 +4,14 @@
     overflow: hidden; 
 }
 
+.popover {
+    max-width: 400px;
+}
+
+#popover-content-login > * {
+    background-color: antiquewhite !important;
+}
+
 .carousel {
     position: fixed;
     z-index: -2;
@@ -16,10 +24,16 @@
     margin-bottom: 353px;
 }
 
+.jumbotron {
+    height: 320px !important;
+    background-image: linear-gradient(rgb(127, 142, 155));
+}
+
 footer {
-    background: black;
-    color: antiquewhite;
-    padding: 40px 0;
+    background: brown;
+    background-image: linear-gradient(white, rgba(226, 97, 129, 0.712));
+    color: rgba(36, 28, 22, 0.856);
+    padding: 40px 0 0 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -34,8 +48,22 @@ footer {
 
 /* ----- Media Queries ----- */
 
-/* Larger than mobile */
-/* Larger than phablet (also point when grid becomes active) */
-/* Larger than tablet */
-/* Larger than desktop */
-/* Larger than Desktop HD */
+/* Small Devices */
+@media(min-width: 576px) {
+
+}
+
+/* Medium Devices */
+@media(min-width: 768px) {
+
+}
+
+/* Large Devices */
+@media(min-width: 992px) {
+
+}
+
+/* Extra Large Devices */
+@media(min-width: 1200px) {
+
+}

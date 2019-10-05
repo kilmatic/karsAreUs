@@ -1,8 +1,8 @@
 <?php
     require_once 'util/main.php';
-    require_once 'util/text_markup.php';
-    require_once 'model/cars_db.php';
+    require_once 'util/text_markup.php';    
     require_once 'model/db.php';
+    require_once 'controller/get_cars.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,5 +15,5 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <?php require_once 'view\nav.php' ?>
-    
+    <?php require_once 'view\nav.php' ?>    
+    <?php require_once 'view\carousel.php'; ?>

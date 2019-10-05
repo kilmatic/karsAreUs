@@ -1,5 +1,4 @@
 <?php require_once 'view\header.php'; ?>
-<?php require_once 'view\carousel.php'; ?>
 <div class="album py-5 bg-light">
     <div class="container">
         <?php require_once 'view\filter.php'; ?>
