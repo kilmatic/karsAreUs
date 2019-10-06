@@ -1,3 +1,40 @@
+<div class="carousel">
+    <div class="slider-container">
+        <ul class="slider">
+            <li class="slider-image currSlide" id="slide1"><span>slide#1</span></li>
+            <li class="slider-image" id="slide2"><span>slide#2</span></li>
+            <li class="slider-image" id="slide3"><span>slide#3</span></li>
+        </ul>
+    </div>
+    <div class="points">
+        <ul>
+            <li class="currSlide">&bull;</li>
+            <li>&bull;</li>
+            <li>&bull;</li>
+        </ul>
+    </div>
+    <div class="arrow" id="next" data-dir="next">&raquo;</div>
+    <div class="arrow" id="prev" data-dir="prev">&laquo;</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <div class="bd-example cover">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">        
         <ol class="carousel-indicators">
