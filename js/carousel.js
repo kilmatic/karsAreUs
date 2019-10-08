@@ -1,20 +1,28 @@
 const slider = document.querySelector('.slider');
 const slides = Array.from(slider.children);
+const currSlide = slider.querySelector('.currSlide');
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
 const points = document.querySelector('.points');
 const pointsDots = Array.from(points.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(slides);
 
 //arrange slides
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + 'px';
 };
+
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (slider, currSlide, targetSlide) => {
   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+
+  /* if (currSlide == slides[2]){
+    slides[2].nextElementSibling = slides[0];
+  }else if (currSlide == slides[0]){
+    slides[0].previousElementSibling = slides[2];
+  } */
+
   currSlide.classList.remove('currSlide');
   targetSlide.classList.add('currSlide');
 }
@@ -29,7 +37,7 @@ prevBtn.addEventListener('click', e => {
   const currSlide = slider.querySelector('.currSlide');
   const prevSlide = currSlide.previousElementSibling;
   const currDot = points.querySelector('.currSlide');
-  const prevDot = currDot.nextElementSibling;
+  const prevDot = currDot.previousElementSibling;
 
   moveToSlide(slider, currSlide, prevSlide);
   updateDots(currDot, prevDot);
