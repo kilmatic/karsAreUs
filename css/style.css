@@ -5,7 +5,8 @@
 body {
 	margin: 0;
     padding: 0;
-    background: rgb(209, 125, 56);
+    /* background: rgb(209, 125, 56); */
+    background-color: #ffffff;
 }
 
 * {
@@ -311,26 +312,15 @@ Filter...
 .filter-card {
     width: 560px;
     height: 60px;
-    border-radius: 0 20px;
     padding: .8em;
     position: relative;
     margin:0 auto;
 }
 
-.filter-button {
-    background-color: transparent;
-    border: rgb(100, 97, 97) Solid 2px;
-    border-radius: 30px;
-    color: rgb(100, 97, 97);
-    font-size: large;
-    position: relative;
-    top: -10px;
-    cursor: pointer;
-}
-
 /*
 Cars...
 */
+
 .car-container {
     width: 90%;
     margin: 1em auto;
@@ -343,6 +333,7 @@ Cars...
     float: left;
     margin: .7em;
     background-color: white;
+    box-shadow: rgba(158, 151, 151) 1px 1px 2px 2px;
 }
 
 .car img {
@@ -357,6 +348,17 @@ Cars...
 .car-title {
     text-align: center;
     font-size: x-large;
+}
+
+.car-button {
+    background-color: transparent;
+    border: rgb(100, 97, 97) Solid 2px;
+    border-radius: 30px;
+    color: rgb(100, 97, 97);
+    font-size: large;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
 }
 
 .car-price {

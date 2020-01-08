@@ -26,7 +26,7 @@
     </select><hr>
     <span class="form-control">
         <label>Price </label>
-        <input type="range" name="price" id="price" min="<?php ?>" max="<?php ?>" step="1000" onchange="showPrice.value=value">
+        <input type="range" name="price" id="price" min="<?php ?>" max="<?php echo $get_max_price; ?>" step="1000" onchange="showPrice.value=value">
         <output id="showPrice"></output>
     </span>
     <span class="form-control">

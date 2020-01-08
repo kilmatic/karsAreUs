@@ -1,9 +1,7 @@
 <?php
     require_once 'util/main.php';
     require_once 'util/text_markup.php';    
-    require_once 'model/db.php';
-    require_once 'model/get_cars.php';
-    require_once 'model/cars_db.php';
+    require_once 'controller/carController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,8 +28,8 @@
                         <div class="car-options">
                             <h5 class="car-title"><?php echo $car['make'].' '.$car['model']; ?></h5>  
                             <div class="car-buttons">
-                                <button type="button" class="filter-button">View</button>
-                                <button type="button" class="filter-button">Enquire</button>
+                                <button type="button" class="car-button">View</button>
+                                <button type="button" class="car-button">Enquire</button>
                             </div>
                             <small class="car-price"><?php echo 'R'.$car['price']; ?></small>                 
                         </div>

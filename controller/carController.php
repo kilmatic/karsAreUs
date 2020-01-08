@@ -1,6 +1,8 @@
 <?php
-require_once 'model/db.php';
+require_once 'model\db.php';
 $db = new Database;
+
+$get_cars = $db->getRows('SELECT * FROM cars');
 
 function add_cars($ref, $make, $model, $man_year, $mileage, $_location, $price, $colour, $transmission)
 {
