@@ -15,7 +15,7 @@
                 <li>
                     <a href="#">Rent Car</a>
                 </li>
-                <li>
+                <li id="submenu">
                     <a href="#">Car Types</a>
                     <ul class="nav-dropdown">
                         <li class="nav-submenu">

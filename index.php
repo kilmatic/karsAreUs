@@ -18,7 +18,7 @@
     <div class="album py-5 bg-light">    
     <div class="container">
         <?php require_once 'view/filter.php'; ?>
-        <div class="car-container">
+        <!-- <div class="car-container">
             <?php if(count($get_cars) == 0) : ?>
                 <p>Cannot find cars...</p>
             <?php else: ?>
@@ -31,19 +31,20 @@
                                 <button type="button" class="car-button">View</button>
                                 <button type="button" class="car-button">Enquire</button>
                             </div>
-                            <small class="car-price"><?php echo 'R'.$car['price']; ?></small>                 
+                            <small class="car-price"><?php echo 'R'.$car['price']; ?></small>    
+                            <small><?php echo $car['mileage'].'km' ?></small>             
                         </div>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
-        </div>            
+        </div>             -->
     </div>
 <?php require_once 'view/footer.php'; ?>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="js/jquery.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/nav.js"></script>
 <script src="js/carousel.js"></script>
 </body>
 </html>
