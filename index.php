@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KarsAreUs</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
 </head>
 <body>
     <?php require_once 'view/nav.php'; ?>    
@@ -41,10 +43,14 @@
     </div>
 <?php require_once 'view/footer.php'; ?>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-<script src="js/jquery.min.js"></script>
+<script src="node_modules\jquery\dist\jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/carousel.js"></script>
+<script src="node_modules\ion-rangeslider\js\ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="node_modules\popper.js\dist\popper.min.js"></script>
+<script src="js\nav.js"></script>
+<script src="js\carousel.js"></script>
+<script src="js\script.js"></script>
 </body>
 </html>
