@@ -80,7 +80,7 @@ nav ul li a:visited:hover {
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
     padding-left: 4px;
-    content: '▾';
+    content: ' ▾';
 }
 
 nav ul li ul li {
@@ -316,68 +316,75 @@ Filter...
  
 .filter-card {
     width: 560px;
-    height: 60px;
+    height: 100%;
     padding: .8em;
     position: relative;
     margin:0 auto;
+    padding-bottom: 3em;
+    border: green 1px solid;
 }
-/*
+
 .filter-make-model {
-    width: 130px;
-    height: 1.5em;
-    background-color: #32333a;
-    float: left;
-    margin-right: .5em;
+    width: 138px;
+    display: inline-block;
+    margin: 5px;
+    padding: 0 14px;
 }
 
 .filter-make-model ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+     padding: 0;
+    position: relative;
 }
 
-.filter-make-model ul li {
-    position: relative;
+.filter-make-model:first-child {
+    margin-left: 15px;
 }
 
 .filter-make-model ul li a,
 .filter-make-model ul li a:visited {
+    width: 138px;
     display: block;
-    padding: 0 5px;
-    line-height: 23px;
-    background-color: #cc3a20;
+    background: #262626;
     color: #ffffff;
     text-decoration: none;
+    line-height: 25px;
+    padding: 5px;
+    padding-left: 5px;
+    border-bottom: #777 1px solid;
 }
 
 .filter-make-model ul li a:hover,
 .filter-make-model ul li a:visited:hover {
-    background-color: #cc3a20;
+    background: #cc3a20;
     color: #ffffff;
 }
 
 .filter-make-model ul li a:not(:only-child):after,
 .filter-make-model ul li a:visited:not(:only-child):after {
-    padding-left: 2px;
-    content: ' ▾';
+    padding: 8px;
+    content: '▾';
 }
 
 .filter-make-model ul li ul li {
-    min-width: 150px;
-}
-
-.filter-make-model ul li ul li a {
+    width: 138px;
+    background: #262626;
+    color: #f2f2f2;
     padding: 5px;
-    line-height: 10px;
-    background-color: #32333a;
+    line-height: 20px;
 }
 
-.filter-make-model .nav-dropdown {
+.filter-make-model ul li ul li:hover,
+.filter-make-model ul li ul li:hover:visited {
+    background: #cc3a20;
+}
+
+.filter-dropdown {
     position: absolute;
     display: none;
-    z-index: 1;
-    box-shadow: 0 3px 12 px rgba(0, 0, 0, 0.15);
-} */
+    z-index: 2;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
 
 /*
 Cars...
