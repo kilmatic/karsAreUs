@@ -47,15 +47,8 @@
 
     <input type="text" class="js-range-slider" name="my_range" value="" /><br>
 
-    <span class="form-control">
-        <label>Mileage </label>            
-        <input type="range" name="price" id="mileage" min="<?php ?>" max="<?php ?>" step="100" onchange="showMiles.value=value">
-        <output id="showMiles"></output>
-    </span>
-
-    <span class="form-control">
-        <label>Year </label>            
-        <input type="range" name="price" id="mileage" min="<?php ?>" max="<?php ?>" step="100" onchange="showYear.value=value">
-        <output id="showYear"></output>
-    </span>
+    <input type="text" class="js-range-slider-mileage" name="my_range_2" value=""/><br>
+        
+    <input type="text" class="js-range-slider-year" name="my_range_3" value="">
+    
 </div>

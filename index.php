@@ -16,11 +16,10 @@
 </head>
 <body>
     <?php require_once 'view/nav.php'; ?>    
-    <?php require_once 'view/carousel.php'; ?>     
-    <div class="album py-5 bg-light">    
+    <?php require_once 'view/carousel.php'; ?>  
     <div class="container">
         <?php require_once 'view/filter.php'; ?>
-        <!-- <div class="car-container">
+        <div class="car-container">
             <?php if(count($get_cars) == 0) : ?>
                 <p>Cannot find cars...</p>
             <?php else: ?>
@@ -39,7 +38,7 @@
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
-        </div>             -->
+        </div>            
     </div>
 <?php require_once 'view/footer.php'; ?>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

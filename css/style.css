@@ -96,8 +96,8 @@ nav ul li ul li a {
 .nav-dropdown {
     position: absolute;
     display: none;
-    z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
 }
 
 .nav-mobile {
@@ -316,12 +316,11 @@ Filter...
  
 .filter-card {
     width: 560px;
-    height: 100%;
     padding: .8em;
     position: relative;
     margin:0 auto;
     padding-bottom: 3em;
-    border: green 1px solid;
+    z-index: -1;
 }
 
 .filter-make-model {
@@ -386,19 +385,31 @@ Filter...
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
+.js-range-slider-mileage {
+    width: 200px;
+}
+
+.js-range-slider-year {
+    width: 200px;
+}
+
 /*
 Cars...
 */
 
 .car-container {
-    width: 90%;
-    margin: 1em auto;
-    padding: 1em;
+    position: absolute;
+    width: 1285px;
+    margin-left: 10%;
+    margin-bottom: 3em;
+    padding: 0;
     padding-left: 1em;
+    /* background-color: #A8CB7C; */
 }
 
 .car {
     width: 400px;
+    position: relative;
     float: left;
     margin: .7em;
     background-color: white;
