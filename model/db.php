@@ -9,12 +9,11 @@ class Database{
         {
             $this->dbCon = new PDO($dsn, $username, $pword, $options); 
             $this->dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->dbCon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_UNIQUE);
+            $this->dbCon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } 
         catch(PDOexception $e) 
         {
-            throw new Exception($e->getMessage());
-            
+            throw new Exception($e->getMessage());            
         }
     }
 
@@ -48,7 +47,7 @@ class Database{
             $statement = $this->dbCon->prepare($query);
             $statement->execute($params);
             return true;
-        } catch (\Throwable $e) {
+        } catch (PDOException $e) {
             throw new Exception($e->getMessage());
         }
     }

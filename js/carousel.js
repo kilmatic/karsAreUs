@@ -16,18 +16,11 @@ slides.forEach(setSlidePosition);
 
 const moveToSlide = (slider, currSlide, targetSlide) => {
   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-
-  // if (currSlide == slides[2]){
-  //   slides[2].nextElementSibling = slides[0];
-  // }else if (currSlide == slides[0]){
-  //   slides[0].previousElementSibling = slides[2];
-  // } 
-
   currSlide.classList.remove('currSlide');
   targetSlide.classList.add('currSlide');
 }
 
-const updateDots = ( currDot, targetDot) => {
+const updateDots = (currDot, targetDot) => {
   currDot.classList.remove('currSlide');
   targetDot.classList.add('currSlide');
 }

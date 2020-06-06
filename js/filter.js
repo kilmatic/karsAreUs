@@ -1,4 +1,4 @@
-$(".js-range-slider").ionRangeSlider({
+$(".js-range-slider-price").ionRangeSlider({
     type: "double",
     skin: "flat",
     grid: true,
@@ -28,7 +28,6 @@ $(".js-range-slider-year").ionRangeSlider({
     step: 1,
     prettify_enabled: false
 });
-
 
 $(function() {
     $('.filter-make-model ul li a').click(function(e) {
