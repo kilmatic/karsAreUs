@@ -44,11 +44,10 @@
             </li>
         </ul>
     </div>
-
-    <input type="text" class="js-range-slider-price" name="my_range" value="" /><br>
-
-    <input type="text" class="js-range-slider-mileage" name="my_range_2" value=""/><br>
-        
-    <input type="text" class="js-range-slider-year" name="my_range_3" value="">
-    
+    <div class="range-sliders">
+        <input type="text" class="js-range-slider-price" name="my_range" value="" />   
+        <input type="text" class="js-range-slider-mileage" name="my_range_2" value=""/>
+        <input type="text" class="js-range-slider-year" name="my_range_3" value="">
+    </div>
+    <button type="submit" name="search" id="search">Search</button>
 </section>

@@ -104,7 +104,7 @@ nav ul li a:visited {
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-    background: #cc3;
+    background: #cc3a20;
     color: #ffffff;
 }
 
@@ -360,12 +360,14 @@ Filter...
     display: inline-block;
     margin: 5px;
     padding: 0 14px;
+    position: relative;
+    z-index: 2;
 }
 
 .filter-make-model ul {
     list-style: none;
     padding: 0;
-    position: relative;
+    position: absolute;
 }
 
 .filter-make-model:first-child {
@@ -404,6 +406,7 @@ Filter...
     color: #f2f2f2;
     padding: 5px;
     line-height: 20px;
+    z-index: 1000;
 }
 
 .filter-make-model ul li ul li:hover,
@@ -412,10 +415,15 @@ Filter...
 }
 
 .filter-dropdown {
-    position: absolute;
+    position: relative;
     display: none;
-    /* z-index: 2; */
+    z-index: 1001;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.range-sliders {
+    position: static;
+    margin-top: 3.5em;
 }
 
 .js-range-slider-mileage {
@@ -424,6 +432,25 @@ Filter...
 
 .js-range-slider-year {
     width: 200px;
+}
+
+#search {
+    width: 200px;
+    margin: 3em;
+    border-radius: 10px;
+    border: 2px #262626 solid;
+    padding: .5em 1em;
+    background-color: #cc3a20;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+}
+
+#search:hover,
+#search:visited:hover {
+    background-color: #262626;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 /*
