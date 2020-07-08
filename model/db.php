@@ -21,42 +21,4 @@ class Database{
         $this->dbCon = null;
         $this->connected = false;
     }
-
-    public function getRow($query, $params = []){
-        try {
-            $statement = $this->dbCon->prepare($query);
-            $statement->execute($params);
-            return $statement->fetch();
-        } catch (PDOException $e) {
-            throw new Exception($e->getMessage());
-        }
-    }
-
-    public function getRows($query, $params = []){
-        try {
-            $statement = $this->dbCon->prepare($query);
-            $statement->execute($params);
-            return $statement->fetchAll();
-        } catch (PDOException $e) {
-            throw new Exception($e->getMessage());
-        }
-    }
-
-    public function insertRow($query, $params = []){
-        try {
-            $statement = $this->dbCon->prepare($query);
-            $statement->execute($params);
-            return true;
-        } catch (PDOException $e) {
-            throw new Exception($e->getMessage());
-        }
-    }
-
-    public function updateRow($query, $params = []){
-        $this->insertRow($query, $params);        
-    }
-
-    public function deleteRows($query, $params = []){
-        $this->insertRow($query, $params);        
-    }
 }    
