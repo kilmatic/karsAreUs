@@ -16,21 +16,14 @@ slides.forEach(setSlidePosition);
 
 const moveToSlide = (slider, currSlide, targetSlide) => {
   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-
-  /* if (currSlide == slides[2]){
-    slides[2].nextElementSibling = slides[0];
-  }else if (currSlide == slides[0]){
-    slides[0].previousElementSibling = slides[2];
-  } */
-
   currSlide.classList.remove('currSlide');
   targetSlide.classList.add('currSlide');
 }
 
-const updateDots = ( currDot, targetDot) => {
-  currDot.classList.remove('currSlide');
-  targetDot.classList.add('currSlide');
-}
+// const updateDots = (currDot, targetDot) => {
+//   currDot.classList.remove('currSlide');
+//   targetDot.classList.add('currSlide');
+// }
 
 //move left
 prevBtn.addEventListener('click', e => {
@@ -55,17 +48,17 @@ nextBtn.addEventListener('click', e => {
 });
 
 //move points
-points.addEventListener('click', e => {
-  //which dot clicked
-  const targetDot = e.target.closest('li');
+// points.addEventListener('click', e => {
+//   //which dot clicked
+//  const targetDot = e.target.closest('li');
 
-  if(!targetDot) return;
+//  if(!targetDot) return;
 
-  const currSlide = slider.querySelector('.currSlide');
-  const currDot = pointsDots.querySelector('.currSlide');
-  const targetIndex = points.findIndex(point => point === targetDot);
-  const targetSlide = slides[targetIndex];
+//   const currSlide = slider.querySelector('.currSlide');
+//   const currDot = pointsDots.querySelector('.currSlide');
+//   const targetIndex = points.findIndex(point => point === targetDot);
+//   const targetSlide = slides[targetIndex];
   
-  moveToSlide(slider, currSlide, targetSlide);
-  updateDots(currDot, targetDot);
-});
+//   moveToSlide(slider, currSlide, targetSlide);
+//   updateDots(currDot, targetDot);
+// });
