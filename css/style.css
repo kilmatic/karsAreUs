@@ -46,6 +46,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --box-shadow-effect: 0 4px 8px 0 rgba(248, 101, 3, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 main {
     margin: 0 auto;
     /* background-color: aquamarine; */
@@ -159,7 +163,7 @@ nav ul li ul li a {
     
     nav {
         width: 100%;
-        padding: 70px 0 15px;
+        padding: 70px 0 0;
     }
 
     nav ul {
@@ -349,7 +353,16 @@ Carousel...
 
 @media only screen and (max-width: 798px) {
     .carousel {
-        display: none !important;
+        /* display: none !important; */
+        height: 160px;
+    }
+
+    .pointDot {
+        display: none;
+    }
+
+    .arrow {
+        font-size: 2em;
     }
 }
 
@@ -362,8 +375,27 @@ Filter...
     margin: 0 auto;
     background-color: #262626;
     padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
  
+.filter-container h2 {
+    font-family: 'Sofachrome';
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.filter-container svg {
+    width: 1.1em;
+    fill: #f2f2f2;
+    margin: 0 0 0 .55em;
+    transform: translateY(18%);
+}
+
 .filter-card {
     width: 70%;
     display: block;
@@ -371,14 +403,6 @@ Filter...
     position: relative;
     margin:0 auto;
     z-index: 0;
-}
-
-.filter-card h2 {
-    font-family: 'Sofachrome';
-    text-align: center;
-    margin-bottom: 1.5em;
-    color: #ffffff;
-    font-size: 1.5rem;
 }
 
 em {
@@ -434,8 +458,8 @@ em {
 .filter-make-model ul li {
     width: 138px;
     display: block;
-    background: #262626;
-    color: #f2f2f2;
+    background: #f2f2f2;
+    color: #262626;
     padding: 5px;
     line-height: 20px;
     z-index: 1000;
@@ -445,6 +469,7 @@ em {
 .filter-make-model ul li:hover:visited {
     background: #cc3a20;
     cursor: pointer;
+    box-shadow: var(--box-shadow-effect);
 }
 
 .filter-dropdown {
@@ -482,6 +507,7 @@ em {
 
     .filter-make-model {
         width: 100%;
+        margin-left: 0;
     }
 
     .filter-make-model a {
@@ -507,8 +533,8 @@ em {
 #search:hover,
 #search:visited:hover {
     background-color: #262626;
-    border: #ffffff 2px solid;
-    color: #ffffff;
+    border: #f2f2f2 2px solid;
+    color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -531,10 +557,6 @@ Cars...
     padding: 1em 0;
     box-shadow: var(--box-shadow-effect);
     border-radius: 10px;
-}
-
-:root {
-    --box-shadow-effect: 0 4px 8px 0 rgba(248, 101, 3, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .car img {
@@ -568,9 +590,9 @@ Cars...
     background-color: transparent;
     border: rgb(100, 97, 97) Solid 2px;
     border-radius: 30px;
-    padding: .3em;
+    padding: .3em .9em;
     color: rgb(100, 97, 97);
-    font-size: large;
+    font-size: small;
     position: relative;
     cursor: pointer;
 }
