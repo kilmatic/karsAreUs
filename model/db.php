@@ -3,7 +3,7 @@ class Database{
     public $connected;
     protected $dbCon;
 
-    public function __construct($username = 'root', $pword = 'kilmatic', $dsn = 'mysql:host=localhost;dbname=vrrrparr;', $options = []){
+    public function __construct($username = 'karsareus', $pword = 'kilmatic', $dsn = 'mysql:host=localhost;dbname=vrrrparr;', $options = []){
         $this->connected = true;
         try 
         {

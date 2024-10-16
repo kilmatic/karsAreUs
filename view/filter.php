@@ -62,6 +62,6 @@
         <div class="range-sliders">
             <input type="text" class="range-slider" name="my_range" value="" />
         </div>
-        <button type="submit" name="search" id="search" class="box-shadow" onclick="filter_data()">Search</button>
+        <button type="submit" name="search" id="filterBtn" class="box-shadow">Search</button>
     </section>
 </div>

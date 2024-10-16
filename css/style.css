@@ -515,7 +515,7 @@ em {
     }
 }
 
-#search {
+#filterBtn {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: medium;
@@ -530,8 +530,8 @@ em {
     transform: translateX(-50%);
 }
 
-#search:hover,
-#search:visited:hover {
+#filterBtn:hover,
+#filterBtn:visited:hover {
     background-color: #262626;
     border: #f2f2f2 2px solid;
     color: #f2f2f2;
