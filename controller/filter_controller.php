@@ -17,7 +17,7 @@ $mileage = filter_input(INPUT_POST, 'mileage');
 $year = filter_input(INPUT_POST, 'year');
 
 if(isset($_POST['action'])) {
-    
+    if($make !== null){};
 }
 
 ?>

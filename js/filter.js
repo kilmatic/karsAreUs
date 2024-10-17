@@ -39,7 +39,7 @@
                 year: year
             },
             success: (data) => {
-                return console.log(data.minPrice);
+                return console.log(data);
             }
         });
     });

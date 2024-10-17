@@ -34,7 +34,6 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> -->
      <script src="node_modules\swiffy-slider\src\swiffy-slider.js"></script>
     <script src="js\nav.js"></script>
-    <script src="js\carousel.js"></script>
     <script src="js\filter.js"></script>
 </body>
 </html>
