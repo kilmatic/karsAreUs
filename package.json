@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fontawesome-free": "^1.0.4",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.4.1",
+    "swiffy-slider": "^1.6.0"
+  }
+}
