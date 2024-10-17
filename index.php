@@ -12,6 +12,7 @@
     <title>KarsAreUs</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="node_modules\swiffy-slider\src\swiffy-slider.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/> -->
 </head>
 <body>
@@ -31,6 +32,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="node_modules\ion-rangeslider\js\ion.rangeSlider.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> -->
+     <script src="node_modules\swiffy-slider\src\swiffy-slider.js"></script>
     <script src="js\nav.js"></script>
     <script src="js\carousel.js"></script>
     <script src="js\filter.js"></script>

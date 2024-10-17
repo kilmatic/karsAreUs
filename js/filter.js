@@ -8,15 +8,15 @@
         });
     });
     $('.range-slider').ionRangeSlider({
-        type: "double",
         skin: "flat",
+        type: "double",
         grid: true,
         prefix: "R",
         min: 15000,
         max: 2000000,
-        prettify_enabled: true
+        // prettify_enabled: true
     });
-    const filter_data = () => {
+    $('#filterBtn').click(function(e) {
         let action = 'fetch_data';
         let minPrice = $('.irs-from').val();
         let maxPrice = $('.irs-to').val();
@@ -42,7 +42,7 @@
                 return console.log(data.minPrice);
             }
         });
-    }
+    });
     const get_data = (data) => {
         let filter = [];
         $('.' + data + ':checked').each(() => {
